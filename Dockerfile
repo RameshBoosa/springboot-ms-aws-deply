@@ -2,7 +2,8 @@
 # FROM eclipse-temurin:17-jdk-alpine
 FROM eclipse-temurin:17-jdk
 # install curl for health api checks, it will be run by AWS deploy service to check the health of our application
-RUN apk add curl
+# RUN apk add curl
+RUN apt-get update && apt-get install -y curl
 # creating volume to persist data
 VOLUME [ "/data" ]
 # exposing port 8080
