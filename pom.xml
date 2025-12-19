@@ -92,6 +92,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>springboot-aws-deply-service</finalName>
 	</build>
 
 </project>
