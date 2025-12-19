@@ -1,5 +1,6 @@
 #  parrent image
-FROM eclipse-temurin:17-jdk-alpine 
+# FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:17-jdk
 # install curl for health api checks, it will be run by AWS deploy service to check the health of our application
 RUN apk add curl
 # creating volume to persist data
