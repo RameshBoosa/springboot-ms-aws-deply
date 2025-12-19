@@ -7,4 +7,4 @@ VOLUME [ "/data" ]
 # exposing port 8080
 EXPOSE 8080
 ADD target/springboot-aws-deply-service.jar springboot-aws-deply-service.jar
-ENTRYPOINT [ "java", "-jar", "/demo-aws.jar" ]
+ENTRYPOINT [ "java", "-jar", "/springboot-aws-deply-service.jar" ]
